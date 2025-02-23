@@ -88,6 +88,13 @@ export function InsuranceForm({
                   </SelectContent>
                 </Select>
               </div>
+
+              <div className="grid gap-2">
+                <div className="flex items-center">
+                  <Label htmlFor="reason">Claim Reason</Label>
+                </div>
+                <Input id="reason" type="text" required />
+              </div>
                 
               <div className="grid gap-2">
                 <div className="flex items-center">
@@ -102,7 +109,7 @@ export function InsuranceForm({
                 <Input id="doc" type="file" required />
               </div>
               <Button type="submit" className="w-full" onClick={submit}>
-                Login
+                Submit
               </Button>
             </div>
           </form>
